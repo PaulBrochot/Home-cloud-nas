@@ -13,10 +13,17 @@ This project involves setting up a high-performance domestic Network Attached St
 - **OS:** Debian 12 (Bookworm) with OpenMediaVault 7.
 - **Protocols:** SMB/CIFS, DLNA, SSH.
 
+<img width="1468" height="880" alt="Capture d’écran 2026-04-26 à 13 37 02" src="https://github.com/user-attachments/assets/249bc8fc-3fc5-4c6b-b6f4-e71ef6cd6f3f" />
+
+
 ## 📋 Installation & Configuration
-### 1. Disk Preparation
-Used `wipefs` to clear old partition signatures and avoid mounting conflicts:
+### 1. Disk Preparation & SSH Access
+Used `wipefs` to clear old partition signatures and avoid mounting conflicts. Managed the system via SSH to monitor disk status.
+
 `sudo wipefs -a /dev/sda`
+
+<img width="1470" height="956" alt="Capture d’écran 2026-04-26 à 13 37 34" src="https://github.com/user-attachments/assets/d45a2a48-9c2d-4a2f-b3c5-0594ff7c0817" />
+
 
 ### 2. OpenMediaVault Setup
 - Created the file system on `/dev/sda` (EXT4).
@@ -26,6 +33,9 @@ Used `wipefs` to clear old partition signatures and avoid mounting conflicts:
 ### 3. Network Services
 - **SMB:** Enabled sharing for Finder access on macOS.
 - **miniDLNA:** Installed and configured the plugin for automatic discovery by the Smart TV.
+
+<img width="1470" height="956" alt="Capture d’écran 2026-04-26 à 13 37 25" src="https://github.com/user-attachments/assets/8f89f667-f0d1-4dc1-981c-c6184e519d75" />
+
 
 ## 🛡️ Troubleshooting (Challenges Overcome)
 - **SMB Permissions:** Resolved an authentication conflict between macOS and Linux by synchronizing user passwords via the OMV Samba database.

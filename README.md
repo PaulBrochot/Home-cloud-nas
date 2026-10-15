@@ -1,6 +1,6 @@
 # 🏠 Personal Home Cloud & Media Server (NAS)
 
-This project involves setting up a high-performance domestic Network Attached Storage (NAS) using a **Raspberry Pi 3** and **OpenMediaVault (OMV)**. The goal is to centralize 1 TB of data and make it accessible across all local network devices (MacBook, iPhone, Android, Smart TV).
+This project involves setting up a **low-cost** home Network Attached Storage (NAS) using a **Raspberry Pi 3** and **OpenMediaVault (OMV)**. The goal is to centralize 1 TB of data and make it accessible across all local network devices (MacBook, iPhone, Android, Smart TV).
 
 ## 🚀 Features
 - **Centralized Storage:** 1 TB hard drive configured with the **EXT4** file system.
